@@ -1,0 +1,5 @@
+GET localhost:8080/flux-concat
+
+### Get request with environment variables
+GET localhost:8080/mono-zip
+###

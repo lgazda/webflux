@@ -1,0 +1,1 @@
+java -jar ./wiremock-standalone-2.25.1.jar --port 9100 --async-response-enabled true --container-threads 10 --global-response-templating true

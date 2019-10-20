@@ -1,0 +1,35 @@
+{
+  "mappings": [
+    {
+      "request": {
+        "method": "GET",
+        "url": "/status/200/delay/1"
+      },
+      "response": {
+        "status": 200,
+        "body": "(result from /status/200/delay/1)",
+        "fixedDelayMilliseconds": 1000
+      }
+    },
+    {
+      "request": {
+        "method": "GET",
+        "url": "/status/200/delay/2"
+      },
+      "response": {
+        "status": 200,
+        "body": "(result from /status/200/delay/2)",
+        "fixedDelayMilliseconds": 2000
+      }
+    },
+    {
+      "request": {
+        "method" : "GET",
+        "url": "/status/400/1"
+      },
+      "response": {
+        "status": 400
+      }
+    }
+  ]
+}
