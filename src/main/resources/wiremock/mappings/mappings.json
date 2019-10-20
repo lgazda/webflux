@@ -3,29 +3,43 @@
     {
       "request": {
         "method": "GET",
-        "url": "/status/200/delay/1"
+        "url": "/numeric"
       },
       "response": {
         "status": 200,
-        "body": "(result from /status/200/delay/1)",
-        "fixedDelayMilliseconds": 1000
+        "body": "{ \"number\" : \"{{randomValue length=5 type='NUMERIC'}}\"}",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 500,
+          "upper": 1500
+        }
       }
     },
     {
       "request": {
         "method": "GET",
-        "url": "/status/200/delay/2"
+        "url": "/time"
       },
       "response": {
         "status": 200,
-        "body": "(result from /status/200/delay/2)",
-        "fixedDelayMilliseconds": 2000
+        "body": "{ \"time\" : \"{{now format='yyyy-MM-dd HH:mm:ss.SSS'}}\"}",
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 500,
+          "upper": 1500
+        }
       }
     },
     {
       "request": {
         "method" : "GET",
-        "url": "/status/400/1"
+        "url": "/400"
       },
       "response": {
         "status": 400

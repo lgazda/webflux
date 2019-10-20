@@ -1,11 +1,19 @@
-###
+### mono-zip
 GET localhost:8080/mono-zip
 
 ###
-GET localhost:8080/flux-concat
+GET localhost:8080/flux-flatmap
 
 ###
 GET localhost:8080/flux-merge
 
+
+### WIREMOCK
 ###
-GET localhost:8080/flux-reduce
+GET localhost:9100/numeric
+
+###
+GET localhost:9100/time
+
+###
+GET localhost:9100/400
