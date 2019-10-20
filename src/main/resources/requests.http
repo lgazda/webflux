@@ -1,0 +1,11 @@
+###
+GET localhost:8080/mono-zip
+
+###
+GET localhost:8080/flux-concat
+
+###
+GET localhost:8080/flux-merge
+
+###
+GET localhost:8080/flux-reduce

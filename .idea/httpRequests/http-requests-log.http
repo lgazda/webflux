@@ -1,0 +1,290 @@
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T123518.200.json
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-20T123502.200.txt
+
+###
+
+GET http://localhost:8080/mono-zip
+
+<> 2019-10-20T123425.200.json
+
+###
+
+GET http://localhost:8080/mono-zip
+
+<> 2019-10-20T123330.200.json
+
+###
+
+GET http://localhost:8080/flux-merge
+
+<> 2019-10-20T123035.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-20T122923.200.txt
+
+###
+
+GET http://localhost:8080/mono-zip
+
+<> 2019-10-20T122802.200.json
+
+###
+
+GET http://localhost:9100/sasa
+
+<> 2019-10-20T122149.404.txt
+
+###
+
+GET http://wiremock:9100/sasa
+
+###
+
+GET http://wiremock:9100/
+
+###
+
+GET http://localhost:8080/mono-zip
+
+<> 2019-10-20T122116.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T122101.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T110913.200.json
+
+###
+
+GET http://localhost:8080/mono-zip
+
+<> 2019-10-20T110901.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T110610.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T105829.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T105409.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104721.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104625.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104619.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104549.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104543.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104441.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104301.200.json
+
+###
+
+GET http://localhost:8080/flux-concat
+
+<> 2019-10-20T104156.200.json
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T075300.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T075212.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T075108.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072310.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072138.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072137.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072134.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072022.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T072004.200.txt
+
+###
+
+GET http://localhost:8080/flux-reduce
+
+<> 2019-10-19T071716.200.txt
+
+###
+
+GET http://localhost:8080/flux-merge
+
+<> 2019-10-19T071703.200.txt
+
+###
+
+GET http://localhost:8080/mono
+
+<> 2019-10-19T035213.200.json
+
+###
+
+GET http://localhost:8080/mono
+
+<> 2019-10-19T035212.200.json
+
+###
+
+GET http://localhost:8080/mono
+
+<> 2019-10-19T034339.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T034329.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T033211.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T033005.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T032643.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T032455.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T032442.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T032423.200.txt
+
+###
+
+GET http://localhost:8080/flux
+
+<> 2019-10-19T032400.200.txt
+
+###
+
