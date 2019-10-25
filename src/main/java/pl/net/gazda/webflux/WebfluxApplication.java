@@ -27,6 +27,7 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
+import static java.time.Duration.ofSeconds;
 import static java.util.Collections.nCopies;
 
 @SpringBootApplication
@@ -72,9 +73,18 @@ public class WebfluxApplication {
 		return Flux.merge(
 				webClientGet("/numeric").bodyToMono(NumericData.class),
 				webClientGet("/numeric").bodyToMono(NumericData.class),
-				webClientGet("/400").bodyToMono(NumericData.class).onErrorReturn(NumericData.ZERO),
+				webClientGet("/400").bodyToMono(NumericData.class)
+						.onErrorReturn(NumericData.ZERO),
 				webClientGet("/unknown").bodyToMono(NumericData.class).onErrorResume(throwable -> Mono.empty())
 		);
+	}
+
+	@GetMapping("/mono-retry-timeout")
+	public Mono<?> monoTimeout() {
+		return  webClientGet("/delayed")
+						.bodyToMono(String.class)
+						.timeout(ofSeconds(1))
+						.retry(3);
 	}
 
 	private WebClient.ResponseSpec webClientGet(String path) {

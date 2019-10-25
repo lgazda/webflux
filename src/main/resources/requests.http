@@ -7,6 +7,9 @@ GET localhost:8080/flux-flatmap
 ###
 GET localhost:8080/flux-merge
 
+###
+GET localhost:8080/mono-retry-timeout
+
 
 ### WIREMOCK
 ###

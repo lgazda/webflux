@@ -44,6 +44,21 @@
       "response": {
         "status": 400
       }
+    },
+    {
+      "request": {
+        "method" : "GET",
+        "url": "/delayed"
+      },
+      "response": {
+        "status": 200,
+        "body": "{{now format='yyyy-MM-dd HH:mm:ss.SSS'}}",
+        "delayDistribution": {
+          "type": "uniform",
+          "lower": 500,
+          "upper": 2000
+        }
+      }
     }
   ]
 }
