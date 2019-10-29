@@ -10,6 +10,9 @@ GET localhost:8080/flux-merge
 ###
 GET localhost:8080/mono-retry-timeout
 
+###
+GET localhost:8080/web-exchange-filter
+
 
 ### WIREMOCK
 ###

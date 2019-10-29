@@ -24,6 +24,10 @@ dependencies {
 
 	implementation 'com.google.guava:guava:28.1-jre'
 	implementation 'org.projectlombok:lombok:1.18.10'
+	implementation "io.github.resilience4j:resilience4j-reactor:1.1.0"
+	implementation "io.github.resilience4j:resilience4j-circuitbreaker:1.1.0"
+	implementation group: 'io.projectreactor.addons', name: 'reactor-extra', version: "3.2.3.RELEASE"
+	
 	
 	annotationProcessor 'org.projectlombok:lombok:1.18.10'
 

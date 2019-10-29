@@ -1,4 +1,4 @@
-package pl.net.gazda.webflux;
+package pl.net.gazda.reactor;
 
 import lombok.extern.slf4j.Slf4j;
 import org.reactivestreams.Subscription;
@@ -16,16 +16,16 @@ public class BackPressureExample {
 
         Flux.fromIterable(asList(1, 2, 3, 4, 5))
                 .subscribeOn(Schedulers.elastic())
-                .subscribe(new MyCustomBackpressureSubscriber<>())
+                .subscribe(new MyCustomBackPressureSubscriber<>())
         ;
 
 
         sleep(5000);
     }
 
-    static class MyCustomBackpressureSubscriber<T> extends BaseSubscriber<T> {
+    static class MyCustomBackPressureSubscriber<T> extends BaseSubscriber<T> {
 
-        int consumed = 0;
+        int processed = 0;
         final int limit = 2;
 
         @Override
@@ -35,13 +35,14 @@ public class BackPressureExample {
 
         @Override
         protected void hookOnNext(T value) {
-            consumed++;
-            log.info("onNext {}", value);
+            log.info("processing {}", value);
+            processed++;
 
-            if (consumed == limit) {
+            if (processed == limit) {
+                //simulates doing some business stuff here where we need to slow down
                 waitBeforeNextBatch();
 
-                consumed = 0;
+                processed = 0;
                 request(limit);
             }
         }
